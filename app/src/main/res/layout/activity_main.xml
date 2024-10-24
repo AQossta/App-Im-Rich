@@ -5,26 +5,38 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#1B0505"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imgChange"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_marginTop="188dp"
+    <ImageButton
+        android:id="@+id/imgBtnChange"
+        android:layout_width="352dp"
+        android:layout_height="390dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.445"
         tools:srcCompat="@tools:sample/avatars" />
 
-    <Button
-        android:id="@+id/btnChange"
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
-        android:backgroundTint="#19811D"
-        android:text="Change Image"
+        android:layout_marginTop="50dp"
+        android:rotationX="17"
+        android:text="I Am Rich"
+        android:textColor="@color/design_default_color_secondary"
+        android:textDirection="locale"
+        android:textSize="48sp"
+        android:typeface="serif"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgChange" />
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

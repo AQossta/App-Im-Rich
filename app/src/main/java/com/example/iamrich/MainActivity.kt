@@ -17,12 +17,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         var change = true
-        binding.btnChange.setOnClickListener{
+        binding.imgBtnChange.setOnClickListener{
             if (change){
-                binding.imgChange.setImageResource(R.drawable.mishka)
+                binding.imgBtnChange.setImageResource(R.drawable.iamrich_01)
                 change = false
             } else {
-                binding.imgChange.setImageResource(R.mipmap.ic_image)
+                binding.imgBtnChange.setImageResource(R.drawable.iamrich_02)
                 change = true
             }
         }
